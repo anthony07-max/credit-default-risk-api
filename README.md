@@ -6,6 +6,8 @@ deployable model: a logistic-regression scorecard baseline against calibrated gr
 chosen by cost rather than defaulting to 0.5, permutation importance, a fairness audit by sex and age, and a
 **FastAPI `/predict` service** with pydantic validation, pytest tests, a Dockerfile and GitHub Actions CI.
 
+[![CI](https://github.com/anthony07-max/credit-default-risk-api/actions/workflows/ci.yml/badge.svg)](https://github.com/anthony07-max/credit-default-risk-api/actions/workflows/ci.yml)
+
 Author: Anthony Adusei-Poku ([@anthony07-max](https://github.com/anthony07-max))
 
 ![ROC and PR curves](charts/02_roc_pr_curves.png)
