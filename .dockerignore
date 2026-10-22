@@ -1,0 +1,5 @@
+.venv
+data
+charts
+.git
+__pycache__

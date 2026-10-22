@@ -1,0 +1,76 @@
+{
+  "models": {
+    "Logistic scorecard": {
+      "roc_auc": 0.7505349479146425,
+      "pr_auc": 0.5077657178636988,
+      "brier": 0.1419043924136746,
+      "cv_roc_auc": 0.7622338093384354
+    },
+    "Gradient boosting (calibrated)": {
+      "roc_auc": 0.7819764521322203,
+      "pr_auc": 0.5604708482577508,
+      "brier": 0.13414161916817707,
+      "cv_roc_auc": 0.7867368757791138
+    },
+    "Gradient boosting (uncalibrated)": {
+      "roc_auc": 0.7795366316560477,
+      "pr_auc": 0.555995489015903,
+      "brier": 0.1348264948734026
+    }
+  },
+  "threshold": {
+    "threshold": 0.18,
+    "cost_fn": 5.0,
+    "cost_fp": 1.0,
+    "recall": 0.6714393368500376,
+    "precision": 0.41713483146067415,
+    "flag_rate": 0.356,
+    "confusion": {
+      "tp": 891,
+      "fp": 1245,
+      "fn": 436,
+      "tn": 3428
+    },
+    "cost_per_customer": {
+      "approve_everyone": 1.1058333333333332,
+      "threshold_0.5": 0.7506666666666667,
+      "cost_optimal": 0.5708333333333333
+    }
+  },
+  "permutation_importance_top10": {
+    "PAY_1": 0.0273,
+    "MONTHS_DELINQUENT": 0.0216,
+    "UTILISATION": 0.0137,
+    "MAX_DELAY": 0.0105,
+    "AVG_PAYMENT": 0.0054,
+    "BILL_AMT1": 0.0047,
+    "LIMIT_BAL": 0.0043,
+    "AVG_BILL": 0.0035,
+    "PAY_AMT2": 0.002,
+    "PAY_RATIO_1": 0.0018
+  },
+  "logistic_top_coefficients": {
+    "cat__EDUCATION_4": -0.963,
+    "num__MONTHS_DELINQUENT": 0.629,
+    "cat__MARRIAGE_2": -0.418,
+    "num__MAX_DELAY": 0.352,
+    "cat__MARRIAGE_3": -0.338,
+    "cat__MARRIAGE_1": -0.283,
+    "num__PAY_1": 0.261,
+    "num__LIMIT_BAL": -0.236
+  },
+  "scorecard_points": {
+    "median_defaulters": 505.14166919109584,
+    "median_non_defaulters": 542.1287014779258
+  },
+  "test_rows": 6000,
+  "default_rate": 0.2212,
+  "default_rate_by_pay1": {
+    "-1": 0.1562,
+    "0": 0.1281,
+    "1": 0.3395,
+    "2": 0.6914,
+    "3": 0.7578,
+    "4": 0.6312
+  }
+}

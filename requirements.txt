@@ -1,0 +1,5 @@
+-r requirements-api.txt
+requests==2.34.2
+xlrd==2.0.2
+matplotlib==3.11.2
+streamlit==1.66.1
